@@ -1,0 +1,30 @@
+#page {
+    display: flex;
+}
+
+#sidebar {
+    width: 200px;
+    background-color: #594e90;
+}
+
+#main {
+    width: calc(100% - 100px);
+}
+
+#header {
+    height: 200px;
+    width: 100%;
+    background-color: #003f5c;
+}
+
+#content {
+    height: 800px;
+    width: 100%;
+    background-color: #bc4c96;
+}
+
+#footer {
+    height: 200px;
+    width: 100%;
+    background-color: #ff5f66;
+}

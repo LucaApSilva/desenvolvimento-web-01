@@ -1,0 +1,27 @@
+body {
+    background-color: aliceblue;
+    font-family: serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: #f0f0f0;
+    background-color: chocolate;
+}
+
+
+p {
+    background-color: aqua;
+    color: brown;
+    font-size: larger;
+    font: bold;
+    width: 500px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}

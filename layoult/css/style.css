@@ -1,0 +1,25 @@
+#header {
+    height: 100px;
+    background-color: #003f5c;
+}
+
+#main {
+    display: flex;
+}
+
+#sidebar {
+    height: 300px;
+    width: 200px;
+    background-color: #594e90;
+}
+
+#content {
+    height: calc(100% - 300px);
+    width: 200px;
+    background-color: #bc4c96;
+}
+
+#footer {
+    height: 100px;
+    background-color: #ff5f66;
+}

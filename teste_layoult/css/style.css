@@ -1,0 +1,22 @@
+#head {
+    height: 100px;
+    background-color: blanchedalmond;
+}
+
+
+#main {
+    display: flex;
+    height: 100%;
+}
+
+#content {
+    height: calc(100% - 300px);
+    width: 100%;
+    background-color: aqua;
+}
+
+#sidebar {
+    height: 300px;
+    width: 300px;
+    background-color: aquamarine;
+}
