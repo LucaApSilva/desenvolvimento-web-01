@@ -6,13 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>layout04</title>
     <style>
+        #header {
+            background-color: #133458;
+            height: 300px;
+        }
 
+        #page {
+            display: flex;
+            height: 2000px;
+        }
 
+        #sidebar {
+            background-color: #838921;
+            width: 500px;
+        }
 
+        #main {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        #content {
+            background-color: #D99B21;
+            height: calc(100% - 300px);
+        }
+
+        #footer {
+            background-color: #2d5a8b;
+            height: 300px;
+        }
     </style>
 </head>
 
 <body>
+
+    <div id="header"></div>
+    <div id="page">
+        <div id="sidebar"></div>
+        <div id="main">
+            <div id="content"></div>
+            <div id="footer"></div>
+        </div>
+    </div>
+
 
 </body>
 
