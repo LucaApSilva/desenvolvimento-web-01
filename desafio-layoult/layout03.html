@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>layout03</title>
+    <style>
+        #header {
+            background-color: #133458;
+            height: 300px;
+        }
+
+        #main {
+            display: flex;
+            height: calc(100vh - 600px);
+            width: 100%;
+        }
+
+        #sidebar {
+            background-color: #838921;
+            width: 800px;
+        }
+
+        #content {
+            background-color: #D99B21;
+            width: calc(100% - 600px);
+        }
+
+        #sidebar02 {
+            background-color: #FAF7BB;
+            width: 800px;
+        }
+
+        #footer {
+            background-color: #133458;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header"></div>
+    <div id="main">
+        <div id="sidebar"></div>
+        <div id="content"></div>
+        <div id="sidebar02"></div>
+    </div>
+    <div id="footer"></div>
+
+</body>
+
+</html>
