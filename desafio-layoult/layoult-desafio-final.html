@@ -13,14 +13,44 @@
             align-items: center;
         }
 
-        .nav {
+        .nav_retangulo_menor {
             background-color: #a4c7ec;
             height: 100px;
             width: 200px;
             margin: 0 20px 0 20px;
         }
 
+        .nav_retangulo_maior {
+            background-color: #a4c7ec;
+            height: 100px;
+            width: 500px;
+            margin: 0 20px 0 20px;
+        }
+
         #secao01 {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            background-color: #bc1953;
+            height: 500px;
+            width: 100%;
+
+        }
+
+        .secao01_retangulo_maior {
+            height: 100px;
+            width: 500px;
+            background-color: #d1f3db;
+        }
+
+        .secao01_retangulo_menor {
+            height: 100px;
+            width: 300px;
+            background-color: #d1f3db;
+        }
+
+        #secao02 {
             display: flex;
             align-items: center;
             justify-content: space-around;
@@ -29,13 +59,13 @@
             width: 100%;
         }
 
-        .secao01 {
+        .secao02 {
             background-color: #FAF7BB;
             height: 300px;
             width: 300px;
         }
 
-        #secao02 {
+        #secao03 {
             display: flex;
             align-items: center;
             justify-content: space-evenly;
@@ -44,29 +74,90 @@
             width: 100%;
         }
 
-        .secao02_quadrado {
+        .secao03_quadrado {
             background-color: black;
             height: 500px;
             width: 500px;
         }
 
-        .secao02_position {
+        .secao03_position {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        .secao02_retangulo01 {
+        .secao03_retangulo03 {
             background-color: #FAF7BB;
             height: 100px;
             width: 500px;
         }
 
-        .secao02_retangulo02 {
+        .secao03_retangulo03 {
             background-color: #FAF7BB;
             height: 100px;
             width: 300px;
             margin-top: 20px;
+        }
+
+
+        #secao04 {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: #7ebeb2;
+            height: 800px;
+            width: 100%;
+        }
+
+        .secao04_main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            height: 200px;
+            width: 400px;
+            background-color: #d1f3db;
+        }
+
+        .secao04__circulo {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: #133458;
+        }
+
+        .secao04__retangulo {
+            height: 100px;
+            width: 200px;
+            background-color: #da9c3c;
+        }
+
+        #secao05 {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: #7d144c;
+            height: 800px;
+            width: 100%;
+        }
+
+        .secao05_retangulo {
+            height: 500px;
+            width: 200px;
+            background-color: #da9c3c;
+        }
+
+        .secao05_2retangulo {
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .secao05_retangulo_pequeno {
+            height: 100px;
+            width: 200px;
+            background-color: #da9c3c;
         }
     </style>
 </head>
@@ -74,47 +165,63 @@
 <body>
 
     <div id="nav">
-        <div class="nav"></div>
-        <div class="nav"></div>
+        <div class="nav_retangulo_menor"></div>
+        <div class="nav_retangulo_maior"></div>
     </div>
 
     <div id="secao01">
-        <div class="secao01"></div>
-        <div class="secao01"></div>
-        <div class="secao01"></div>
+
+        <div class="secao01_retangulo_maior"></div>
+        <div class="secao01_retangulo_menor"></div>
+
     </div>
+
 
     <div id="secao02">
-        <div class="secao02_quadrado"></div>
-        <div class="secao02_position">
-
-            <div class="secao02_retangulo01"></div>
-            <div class="secao02_retangulo02"></div>
-
-        </div>
-
-
+        <div class="secao02"></div>
+        <div class="secao02"></div>
+        <div class="secao02"></div>
     </div>
 
-    </div>
+
     <div id="secao03">
+        <div class="secao03_quadrado"></div>
+        <div class="secao03_position">
 
-        <div>
+            <div class="secao03_retangulo03"></div>
+            <div class="secao03_retangulo03"></div>
 
-            <div></div>
-            <div></div>
         </div>
 
 
     </div>
 
+    </div>
+    <div id="secao04">
+
+        <div class="secao04_main">
+            <div class="secao04__circulo"></div>
+            <div class="secao04__retangulo"></div>
+        </div>
+
+        <div class="secao04_main">
+            <div class="secao04__circulo"></div>
+            <div class="secao04__retangulo"></div>
+        </div>
+
+    </div>
+
+    <div id="secao05">
+
+        <div class="secao05_retangulo"></div>
+        <div class="secao05_retangulo"></div>
+        <div class="secao05_2retangulo">
+            <div class="secao05_retangulo_pequeno"></div>
+            <div class="secao05_retangulo_pequeno"></div>
+        </div>
 
 
-
-
-
-
-    <div id="secao04"></div>
+    </div>
 
 </body>
 
