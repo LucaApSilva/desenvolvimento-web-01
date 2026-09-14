@@ -12,7 +12,7 @@ body > header {
 
 main{
     background-color: #1c1c1c;
-    height: 500px;
+    min-height: 500px;
     padding: 20px;
 }
 
@@ -73,4 +73,32 @@ main tr, td, th{
     border-width: 1px;
     border-color: #fff;
     border-style: solid;
+    padding: 5px 10px;
+}
+
+main table a {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+main table a:hover{
+    color: greenyellow;
+    font-size: medium;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+label{
+    padding: 10px 0 2px 0;
+}
+
+input {
+   border-radius: 5px;
+   border: none;
+   padding: 5px 10px;
 }
