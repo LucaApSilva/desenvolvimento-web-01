@@ -11,7 +11,7 @@
         <div class="wrapper">
             <div id="logo">
                 <img src="img/logo.svg" alt="Cofre de moedas em formato de porco">
-                <h1> <span>IF Investimentos </span></h1>
+                <h1> IF<span> Investimentos</span></h1>
 
             </div>
             <div class="nav">
@@ -30,15 +30,32 @@
             
             <h1>Cadastro</h1>
             <form>
+
+                
+
                 <label for="nameUser"> Nome:</label>
                 <input type="text" name="nameUser" id="nameUser" placeholder="Nome">
                 
                 <label for="surnameUser"> Sobrenome:</label>
                 <input type="text" name="surnameUser" id="surnameUser" placeholder="Sobrenome">
-                
+
+                <label for="cpfUser"> CPF:</label>
+                <input type="number" name="cpfUser" id="cpfUser">
+
+                 <label for="telUser"> Telefone:</label>
+                <input type="tel" name="telUser" id="telUser">
+
+                <fieldset>
+                <legend>Dados de Acesso</legend>
+
+                <label for="emailUser"> Email:</label>
+                <input type="number" name="emailUser" id="emailUser" placeholder="auseu@gmail.com">
+
                 <label for="passawordUser"> Senha:</label>
                 <input type="password" name="passwordUser" id="passwordUser" >
-            
+                
+                </fieldset>
+
                  <h3> Qual seu perfil de investidor?</h3>
 
                  <div>
@@ -76,9 +93,91 @@
                  </div>
 
                   <div>
-                     <input type="checkbox" name="investimentos" id="fundoImobiliario" value="fi">
-                     <label for="fundoImobiliario"> Fundo Imobiliario</label>
+                      <input type="checkbox" name="investimentos" id="fundoImobiliario" value="fi">
+                      <label for="fundoImobiliario"> Fundo Imobiliario</label>
                  </div>
+
+
+                 <h3> Qual país você prefere investir?</h3>
+
+                 <div>
+                     <input type="radio" name="paisInvest" id="eua" value="eua">
+                     <label for="eua"> EUA</label>
+                 </div>
+
+                 <div>
+                     <input type="radio" name="paisInvest" id="brazil" value="br">
+                     <label for="brazil"> Brasil</label>
+                 </div>
+
+                 <div>
+                     <input type="radio" name="paisInvest" id="portugal" value="portugal">
+                     <label for="portugal"> Portugal</label>
+                 </div>
+
+                <fieldset>
+                    <legend>Endereço</legend>
+
+
+                    <div id="endereco">
+                        <label for="streetUser"> Rua:</label>
+                        <input type="text" name="streetUser" id="streetUser" placeholder="Rua Pedro Alvares">
+
+                        <label for="numberUser"> Numero:</label>
+                        <input type="number" name="numberUser" id="numberUser">
+
+                    </div>
+
+
+                    <div>
+                        <label for="cityUser"> Cidade:</label>
+                        <input type="text" name="cityUser" id="cityUser" placeholder="Cidade">
+
+                    </div>
+
+                    <div>
+                        <label for="stateUser"> Estado:</label>
+                        <select name="stateUser" id="stateUser">
+                            <option value="São Paulo">São Paulo</option>
+                            <option value="São Paulo">São Paulo</option>
+                            <option value="São Paulo">São Paulo</option>
+                            <option value="São Paulo">São Paulo</option>
+                        </select>
+
+                    </div>
+
+                    <div>
+                        <label for="cepUser"> CEP:</label>
+                        <input type="number" name="cepUser" id="cepUser">
+
+                    </div>
+
+                    
+                    <div>
+                        <label for="complementUser"> Complemento:</label>
+                        <textarea rows="1" name="complementUser" id="complementUser" placeholder="casa 02"></textarea>
+                    </div>
+                    
+                </fieldset>
+
+                <label for="objectvUser">Obejetivo de Investimento:</label>
+                <textarea rows="4" name="objectvUser" id="objectvUser" placeholder="Descreva seus objetivos...."></textarea>
+
+               <div>
+                   <input type="checkbox" name="aceptTerms" id="aceptTerms" value="terms">
+                   <label for="aceptTerms">Aceite nossos termos!</label>
+               </div>
+               
+               
+               <div>
+                   <input type="checkbox" name="promos" id="promos" value="terms">
+                   <label for="promos">Receba nossas promoções!</label>
+                </div>
+
+
+                
+                <input type="submit" value="Mandar formulário">
+
 
             </form>
 

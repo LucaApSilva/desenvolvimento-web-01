@@ -34,6 +34,10 @@ body > header .wrapper{
     align-items: center;
 }
 
+#logo span {
+    color: gold;
+}
+
 #logo{
     display: flex;
     gap: 10px;
@@ -53,7 +57,7 @@ nav ul{
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(16, 158, 16);
+    color: white;
 }
 
 nav ul li a:hover{
@@ -94,11 +98,42 @@ form{
 }
 
 label{
-    padding: 10px 0 2px 0;
+    margin: 10px 0 0 0;
 }
 
 input {
    border-radius: 5px;
    border: none;
    padding: 5px 10px;
+   background-color: #fffff1;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+fieldset input{
+   border-radius: 5px;
+   border: none;
+   padding: 5px 10px;
+   background-color: #fffff1;
+}
+
+fieldset label{
+    margin: 10px 0 0 0;
+}
+
+input[type="submit"]{
+    margin-top: 10px;
+    background-color:gold;
+}
+
+#endereco {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
 }
