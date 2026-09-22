@@ -118,22 +118,24 @@
                 <fieldset>
                     <legend>Endereço</legend>
 
-
                     <div id="endereco">
-                        <label for="streetUser"> Rua:</label>
-                        <input type="text" name="streetUser" id="streetUser" placeholder="Rua Pedro Alvares">
-
-                        <label for="numberUser"> Numero:</label>
-                        <input type="number" name="numberUser" id="numberUser">
-
+                            <div class="rua">
+                                <label for="streetUser"> Rua:</label>
+                                <input type="text" name="streetUser" id="streetUser" placeholder="Rua Pedro Alvares">
+                            </div>
+    
+                            <div class="numero">
+                                <label for="numberUser"> Numero:</label>
+                                <input type="number" name="numberUser" id="numberUser">
+                            </div>
                     </div>
-
-
-                    <div>
-                        <label for="cityUser"> Cidade:</label>
-                        <input type="text" name="cityUser" id="cityUser" placeholder="Cidade">
-
-                    </div>
+                            
+    
+                        <div>
+                            <label for="cityUser"> Cidade:</label>
+                            <input type="text" name="cityUser" id="cityUser" placeholder="Cidade">
+    
+                        </div>
 
                     <div>
                         <label for="stateUser"> Estado:</label>
@@ -153,7 +155,7 @@
                     </div>
 
                     
-                    <div>
+                    <div class="textarea" >
                         <label for="complementUser"> Complemento:</label>
                         <textarea rows="1" name="complementUser" id="complementUser" placeholder="casa 02"></textarea>
                     </div>

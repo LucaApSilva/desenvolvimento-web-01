@@ -134,6 +134,34 @@ input[type="submit"]{
 #endereco {
     display: flex;
     gap: 5px;
-    align-items: center;
-    justify-content: center;
+    justify-items: center;
+}
+
+#endereco div.rua {
+    display: flex;
+    gap: 3px;
+}
+
+#endereco div.numero {
+    display: flex;
+    gap: 3px;
+}
+
+#endereco div.rua label {
+   margin: 0;
+}
+
+#endereco div.numero label{
+    margin: 0;
+}
+
+div .textarea{
+    display: flex;
+    justify-items: center;
+    gap: 3px;
+}
+
+
+div .textarea label {
+    margin: 0;
 }
