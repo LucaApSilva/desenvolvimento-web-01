@@ -12,7 +12,7 @@
             <div id="logo">
                 <img src="img/logo.svg" alt="Cofre de moedas em formato de porco">
                 <h1> <span>IF Investimentos </span></h1>
-
+                
             </div>
             <div class="nav">
                 <nav>
@@ -23,24 +23,77 @@
                     </ul>
 
                 </nav>
+
+                 <button class="button_add_stock" onclick="openModal('addStockModal')">Add +</button>
             </div>
         </div>
     </header>
     <main>
         <div class="wrapper">
             
-            <h1>Home</h1>
+            <h1>Meus Investimentos</h1>
+            
+            <div class="stockList">
+                <div class="stockCard">
+                    <header>
+                        <div>
+                            <h1>APPL</h1>
+                            <span>Apple Inc.</span>
+                        </div>
+                        <span class="stockvalue">$ 100.00</span>
+                    </header>
+                    <footer class="stockPosition">
+                        <span><b>5</b>Ações</span>
 
+                        <div>
+                            <span>Total</span>
+                            <span class="totalStockValeu">$ 500.00</span>
+                        </div>
+                    </footer>
+                </div>
+            </div>
         </div>
-
-
+        
+        
     </main>
     <footer>
         <div class="wrapper">
-
+            
         </div>
     </footer>
+    
+    <div class="modal" id="addStockModal">
+        <main>
+
+            <div>
+                
+                <button class="closeModal" onclick="closeModal('addStockModal')">X</button>
+                
+            </div>
+            
+
+            <h2>Adicionar ação</h2>
+            <form id="addStockForm">
+
+                <label for="stockTicker">Simbolo:</label>
+                <input type="text" name="stockTicker" id="stockTicker">
+                
+                <label for="stockName">Name:</label>
+                <input type="text" name="stockName" id="stockName">
+                
+                <label for="stockPrice">Preço da Ação:</label>
+                <input type="number" name="stockPrice" id="stockPrice">
+
+                <label for="stockQuanty">Quantidade:</label>
+                <input type="number" name="stockQuanty" id="stockQuanty">
+
+                <input type="submit" value="Adicionar">
 
 
+            </form>
+        </main>
+    </div>
+    
+    <script src="JS/main.js"></script>
 </body>
 </html>

@@ -17,7 +17,7 @@ main{
 }
 
 
-footer{
+body > footer{
     height: 200px;
     background-color: black;
 }
@@ -66,7 +66,9 @@ nav ul li a:hover{
 
 .nav {
     display: flex;
-    align-items:center;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
 }
 
 main table {
@@ -165,3 +167,89 @@ div .textarea{
 div .textarea label {
     margin: 0;
 }
+
+.button_add_stock {
+    border: 1px solid gold;
+    background-color: yellow;
+    border-radius: 5px;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button_add_stock:hover {
+
+    height: 28px;
+    width: 52px;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000099;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal main{
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    color: #000;
+}
+
+.modal main form input[type="text"], .modal main form input[type="number"] {
+    border: 1px solid rgb(199, 197, 197);
+}
+
+.closeModal{
+
+    color: rgb(0, 0, 0);
+    font: bold;
+    background-color: gold;
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    border-radius: 50%;
+    height: 25px;
+    cursor: pointer;
+}
+
+.modal > main > div{
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.stockCard{
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    width: 200px;
+    border-radius: 10%;
+}
+
+.stockCard header div h1 {
+    margin: 0;
+}
+
+.stockCard header div{
+    display: flex;
+    flex-direction: column;
+}
+
+.stockCard header{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.stockvalue{
+    color: green;
+}
+
