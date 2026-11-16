@@ -33,7 +33,7 @@
             
             <h1>Meus Investimentos</h1>
             
-            <div class="stockList">
+            <div id="stockList">
                 <div class="stockCard">
                     <header>
                         <div>
@@ -43,7 +43,7 @@
                         <span class="stockvalue">$ 100.00</span>
                     </header>
                     <footer class="stockPosition">
-                        <span><b>5</b>Ações</span>
+                        <span><b>5 </b>Ações</span>
 
                         <div>
                             <span>Total</span>
@@ -73,7 +73,7 @@
             
 
             <h2>Adicionar ação</h2>
-            <form id="addStockForm">
+            <form id="addStockForm" onsubmit="addStockCard(event)">
 
                 <label for="stockTicker">Simbolo:</label>
                 <input type="text" name="stockTicker" id="stockTicker">

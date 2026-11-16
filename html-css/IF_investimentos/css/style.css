@@ -168,7 +168,7 @@ div .textarea label {
     margin: 0;
 }
 
-.button_add_stock {
+button {
     border: 1px solid gold;
     background-color: yellow;
     border-radius: 5px;
@@ -229,13 +229,22 @@ div .textarea label {
 .stockCard{
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: #000;
     width: 200px;
     border-radius: 10%;
+    padding-bottom: 5px;
+    gap: 10px;
+    position: relative;
+}
+
+.stockCard:hover .stockActions{
+        display: flex
 }
 
 .stockCard header div h1 {
     margin: 0;
+    font-size: x-large;
 }
 
 .stockCard header div{
@@ -253,3 +262,26 @@ div .textarea label {
     color: green;
 }
 
+.stockCard footer{
+    display: flex;
+    gap: 10px;
+}
+
+#stockList{
+    display: flex;
+    gap: 20px;
+}
+
+.stockActions{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #000000a9;
+    border-radius: 10%;
+}
