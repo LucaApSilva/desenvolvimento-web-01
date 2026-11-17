@@ -24,10 +24,8 @@ function addStockCard(event) {
 
     const stockList = document.getElementById("stockList")
 
-    console.log(stockList)
-
     stockList.innerHTML += `
-        <div class="stockCard">
+        <div class="stockCard" id="${stock.ticker}">
                     <header>
                         <div>
                             <h1>${stock.ticker}</h1>
@@ -44,8 +42,8 @@ function addStockCard(event) {
                         </div>
                     </footer>
                     <div class="stockActions">
-                        <button onclick="">Editar</button>
-                        <button onclick="">Excluir</button>
+                        <button onclick="openModaledit(this)">Editar</button>
+                        <button onclick="deleteStockCard(this)">Excluir</button>
                     </div>
                         
                     
@@ -53,5 +51,39 @@ function addStockCard(event) {
 
     `
     closeModal("addStockModal")
+
+}
+
+function openModalEdit(stockButton) {
+
+    const stockCard = stockButton.closest(".stockCard")
+    const stock ={
+        ticker : stockCard.stockTicker.value,
+        name : stockCard.stockName.value,
+        price : stockCard.stockPrice.value,
+        quanty : stockCard.stockQuanty.value
+    }
+
+    const editStockCard = document.getElementById("#editStockModal")
+
+    editStockCard.editstockTicker = stock.ticker
+    editStockCard.editstockName = stock.name
+    editStockCard.editstockPrice = stock.price
+    editStockCard.editstockQuanty = stock.quanty
+
+    openModal("editStockModal")
+}
+
+function deleteStockCard(stockButton) {
+ 
+    const stockCard = stockButton.closest(".stockCard")
+    stockCard.remove()
+}
+
+function editStockCard(event) {
+    
+
+
+
 
 }

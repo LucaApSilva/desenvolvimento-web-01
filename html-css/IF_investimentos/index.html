@@ -93,6 +93,38 @@
             </form>
         </main>
     </div>
+
+    <div class="modal" id="editStockModal">
+        <main>
+
+            <div>
+                
+                <button class="closeModal" onclick="closeModal('editStockModal')">X</button>
+                
+            </div>
+            
+
+            <h2>Editar ação</h2>
+            <form id="editStockForm" onsubmit="editStockCard(event)">
+
+                <label for="editstockTicker">Simbolo:</label>
+                <input type="text" name="editstockTicker" id="editstockTicker">
+                
+                <label for="editstockName">Name:</label>
+                <input type="text" name="editstockName" id="editstockName">
+                
+                <label for="editstockPrice">Preço da Ação:</label>
+                <input type="number" name="editstockPrice" id="editstockPrice">
+
+                <label for="editstockQuanty">Quantidade:</label>
+                <input type="number" name="editstockQuanty" id="editstockQuanty">
+
+                <input type="submit" value="Adicionar">
+
+
+            </form>
+        </main>
+    </div>
     
     <script src="JS/main.js"></script>
 </body>
